@@ -91,7 +91,7 @@ class _DrawerSectionState extends State<DrawerSection> {
               children: [
                 const Expanded(child: SizedBox()),
                 ListTile(
-                  leading: SvgPicture.asset(AppIcons.iconsLogoutLight),
+                  leading: SvgPicture.asset(AppIcons.iconsLogout(context)),
                   title: FittedBox(
                     fit: BoxFit.scaleDown,
                     child: Text(

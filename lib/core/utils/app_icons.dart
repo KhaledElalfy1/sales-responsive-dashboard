@@ -25,14 +25,12 @@ class AppIcons {
           ? "assets/icons/Logo_dark.svg"
           : "assets/icons/Logo_light.svg";
 
-  /// Assets for iconsLogoutDark
-  /// assets/icons/logout_dark.svg
-  static const String iconsLogoutDark = "assets/icons/logout_dark.svg";
 
-  /// Assets for iconsLogoutLight
-  /// assets/icons/logout_light.svg
-  static const String iconsLogoutLight = "assets/icons/logout_light.svg";
 
+  static String iconsLogout(context) =>
+      Theme.of(context).brightness == Brightness.dark
+          ? "assets/icons/logout_dark.svg"
+          : "assets/icons/logout_light.svg";
   /// Assets for iconsMyCartLight
   /// assets/icons/my_cart_light.svg
   static const String iconsMyCartLight = "assets/icons/my_cart_light.svg";
@@ -45,14 +43,12 @@ class AppIcons {
   /// assets/icons/profile_light.svg
   static const String iconsProfileLight = "assets/icons/profile_light.svg";
 
-  /// Assets for iconsSearchDark
-  /// assets/icons/Search_dark.svg
-  static const String iconsSearchDark = "assets/icons/Search_dark.svg";
 
-  /// Assets for iconsSearchLight
-  /// assets/icons/Search_light.svg
-  static const String iconsSearchLight = "assets/icons/Search_light.svg";
 
+  static String searchIcon(context) =>
+      Theme.of(context).brightness == Brightness.dark
+          ? "assets/icons/Search_dark.svg"
+          : "assets/icons/Search_light.svg";
   /// Assets for iconsSettingsLight
   /// assets/icons/settings_light.svg
   static const String iconsSettingsLight = "assets/icons/settings_light.svg";
@@ -60,4 +56,10 @@ class AppIcons {
   /// Assets for iconsSupportLight
   /// assets/icons/support_light.svg
   static const String iconsSupportLight = "assets/icons/support_light.svg";
+
+
+  static String iconNotification(context) =>
+      Theme.of(context).brightness == Brightness.dark
+          ? "assets/icons/Notifications_dark.svg"
+          : "assets/icons/Notifications_light.svg";
 }
