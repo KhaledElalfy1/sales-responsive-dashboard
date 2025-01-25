@@ -12,7 +12,7 @@ abstract class AppFonts {
   static TextStyle bold40(BuildContext context) => TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 40),
         fontWeight: FontWeight.bold,
-        color: Theme.of(context).textTheme.bodyLarge?.color,
+        color: Colors.white,
       );
 
   static TextStyle medium20(BuildContext context) => TextStyle(
@@ -76,8 +76,8 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
       fontSize * getCurrentPlatformRatio(currentWidth: currentWidth);
   double lowerLimit = responsiveFont * .8;
   double upperLimit = responsiveFont * 1.2;
-  debugPrint(
-      'base font size $fontSize , lowerLimit = $lowerLimit , upperLimit= $upperLimit , responsive font $responsiveFont , final font ${responsiveFont.clamp(lowerLimit, upperLimit)}');
+  // debugPrint(
+  //     'base font size $fontSize , lowerLimit = $lowerLimit , upperLimit= $upperLimit , responsive font $responsiveFont , final font ${responsiveFont.clamp(lowerLimit, upperLimit)}');
 
   return responsiveFont.clamp(lowerLimit, upperLimit);
 }
