@@ -9,13 +9,15 @@ class DesktopLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Row(
-        children: [
-          Expanded(flex: 1,child: DrawerSection()),
-          Expanded(flex: 3,child: ProductSection(),),
-          Expanded(flex: 2,child: CardSection()),
-        ],
-      )
-    );
+        body: Row(
+      children: [
+        Expanded(flex: 1, child: DrawerSection()),
+        Expanded(
+          flex: 3,
+          child: ProductSection(),
+        ),
+        Expanded(flex: 2, child: CardSection()),
+      ],
+    ));
   }
 }
