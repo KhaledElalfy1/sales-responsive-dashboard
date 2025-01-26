@@ -28,13 +28,15 @@ class CardItemListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      shrinkWrap: true,
-      itemCount: products.length,
-      itemBuilder: (context, index) => CardItemWidget(
-        productModel: products[index],
+    return SizedBox(
+      height: products.length * (100.0 + 10),
+      child: ListView.separated(
+        itemCount: products.length,
+        itemBuilder: (context, index) => CardItemWidget(
+          productModel: products[index],
+        ),
+        separatorBuilder: (context, index) => const SizedBox(height: 10),
       ),
-      separatorBuilder: (context, index) => const SizedBox(height: 10),
     );
   }
 }

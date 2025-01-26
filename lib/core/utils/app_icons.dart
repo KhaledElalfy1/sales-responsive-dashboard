@@ -25,7 +25,10 @@ class AppIcons {
           ? "assets/icons/Logo_dark.svg"
           : "assets/icons/Logo_light.svg";
 
-
+  static String iconsCart(context) =>
+      Theme.of(context).brightness == Brightness.dark
+          ? "assets/icons/Card1_dark.svg"
+          : "assets/icons/Card1_light.svg";
 
   static String iconsLogout(context) =>
       Theme.of(context).brightness == Brightness.dark

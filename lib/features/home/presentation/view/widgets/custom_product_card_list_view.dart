@@ -31,7 +31,7 @@ class CustomProductCardListView extends StatelessWidget {
     return SizedBox(
       height: 360,
       child: ListView.separated(
-        shrinkWrap: true,
+        // shrinkWrap: true,
         itemCount: products.length,
         scrollDirection: Axis.horizontal,
         separatorBuilder: (context, index) {

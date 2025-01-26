@@ -13,67 +13,65 @@ class ProductSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(40.0),
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 30,
-            ),
-            const ProductSectionHeader(),
-            const SizedBox(
-              height: 30,
-            ),
-            const UpgradePromotionWidget(),
-            const SizedBox(
-              height: 50,
-            ),
-            Row(
-              children: [
-                Text(
-                  'Our products',
-                  style: AppFonts.bold25(context),
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 30,
+          ),
+          const ProductSectionHeader(),
+          const SizedBox(
+            height: 30,
+          ),
+          const UpgradePromotionWidget(),
+          const SizedBox(
+            height: 50,
+          ),
+          Row(
+            children: [
+              Text(
+                'Our products',
+                style: AppFonts.bold25(context),
+              ),
+              const Spacer(),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  'View all',
+                  style: AppFonts.bold15(context)
+                      .copyWith(color: AppColors.primaryColor),
                 ),
-                const Spacer(),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    'View all',
-                    style: AppFonts.bold15(context)
-                        .copyWith(color: AppColors.primaryColor),
-                  ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const CustomProductCardListView(),
+          const SizedBox(
+            height: 50,
+          ),
+          Row(
+            children: [
+              Text(
+                'Special For You',
+                style: AppFonts.bold25(context),
+              ),
+              const Spacer(),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  'View all',
+                  style: AppFonts.bold15(context)
+                      .copyWith(color: AppColors.primaryColor),
                 ),
-              ],
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            const CustomProductCardListView(),
-            const SizedBox(
-              height: 50,
-            ),
-            Row(
-              children: [
-                Text(
-                  'Special For You',
-                  style: AppFonts.bold25(context),
-                ),
-                const Spacer(),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    'View all',
-                    style: AppFonts.bold15(context)
-                        .copyWith(color: AppColors.primaryColor),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-           const SpecialForYouCardsListView()
-          ],
-        ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+         const SpecialForYouCardsListView()
+        ],
       ),
     );
   }

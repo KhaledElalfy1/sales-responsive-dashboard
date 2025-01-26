@@ -30,7 +30,7 @@ class SpecialForYouCardsListView extends StatelessWidget {
       aspectRatio: 6.5,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
-        shrinkWrap: true,
+        // shrinkWrap: true,
         itemCount: 3,
         itemBuilder: (context, index) => SpecialProductForYouCard(
           productModel: products[index],

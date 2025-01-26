@@ -11,12 +11,32 @@ class DesktopLayout extends StatelessWidget {
     return const Scaffold(
         body: Row(
       children: [
-        Expanded(flex: 1, child: DrawerSection()),
         Expanded(
-          flex: 3,
-          child: ProductSection(),
+          flex: 1,
+          child: DrawerSection(),
         ),
-        Expanded(flex: 2, child: CardSection()),
+        Expanded(
+          flex: 5,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: ProductSection(),
+                    ),
+                    Expanded(
+                      flex: 2,
+                      child: CardSection(),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ],
     ));
   }

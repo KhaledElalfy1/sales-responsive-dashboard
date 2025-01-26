@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sales_responsive_dashboard/core/utils/app_colors.dart';
 import 'package:sales_responsive_dashboard/core/utils/app_fonts.dart';
-
+import 'package:sales_responsive_dashboard/core/utils/app_images.dart';
 class CustomCardInfo extends StatelessWidget {
   const CustomCardInfo({
     super.key,
@@ -15,7 +15,7 @@ class CustomCardInfo extends StatelessWidget {
         color: AppColors.primaryColor,
         borderRadius: BorderRadius.circular(30),
         image: const DecorationImage(
-            image: AssetImage('assets/images/Card.png'), fit: BoxFit.fill),
+            image: AssetImage(AppImages.card), fit: BoxFit.fill),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
