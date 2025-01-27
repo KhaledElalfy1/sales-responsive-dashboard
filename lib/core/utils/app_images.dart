@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AppImages {
   AppImages._();
 
@@ -11,6 +13,10 @@ class AppImages {
   static const String special2 = 'assets/images/special2.png';
   static const String special3 = 'assets/images/special3.png';
 
-  static const String card = 'assets/images/Card.png';
 
+  static String card(context) {
+    return Theme.of(context).brightness == Brightness.dark
+        ? 'assets/images/Card_dark.png'
+        : 'assets/images/Card_light.png';
+  }
 }

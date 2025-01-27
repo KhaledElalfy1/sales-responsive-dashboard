@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sales_responsive_dashboard/core/utils/app_fonts.dart';
-import 'package:sales_responsive_dashboard/core/utils/app_icons.dart';
 import 'package:sales_responsive_dashboard/core/widgets/custom_elevated_button.dart';
+import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/card_info_section.dart';
 import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/card_item_list_view.dart';
-import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/custom_card_info.dart';
 
 class CardSection extends StatelessWidget {
   const CardSection({super.key});
@@ -22,25 +20,7 @@ class CardSection extends StatelessWidget {
           children: [
             Text('Payment Card', style: AppFonts.bold25(context)),
             const SizedBox(height: 30),
-            Stack(
-              clipBehavior: Clip.none,
-              children: [
-                SvgPicture.asset(
-                  AppIcons.iconsCart(context),
-                  fit: BoxFit.fill,
-                ),
-                const Positioned(
-                  top: 0,
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  child: RotationTransition(
-                    turns: AlwaysStoppedAnimation(10 / 360),
-                    child: CustomCardInfo(),
-                  ),
-                ),
-              ],
-            ),
+            const CardInfoSection(),
             const SizedBox(height: 30),
             Text(
               'Your Card',
