@@ -13,8 +13,8 @@ class CustomCardButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5.0),
       child: SizedBox(
-        height: 30,
-        width: 30,
+        height: 25,
+        width: 25,
         child: IconButton(
           style: ButtonStyle(
             shape: WidgetStateProperty.all(
@@ -29,7 +29,7 @@ class CustomCardButton extends StatelessWidget {
           onPressed: onPressed,
           icon: Icon(
             icon,
-            size: 15,
+            size: 12,
           ),
         ),
       ),

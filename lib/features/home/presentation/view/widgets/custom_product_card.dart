@@ -24,13 +24,7 @@ class CustomProductCard extends StatelessWidget {
             productModel.image,
             height: 200,
           ),
-          const SizedBox(
-            height: 20,
-          ),
           Text(productModel.name, style: AppFonts.semiBold25(context)),
-          const SizedBox(
-            height: 5,
-          ),
           Text(
             '\$${productModel.price}',
             style: AppFonts.medium17(context)

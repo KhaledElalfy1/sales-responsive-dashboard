@@ -31,6 +31,7 @@ class CardItemListView extends StatelessWidget {
     return SizedBox(
       height: products.length * (100.0 + 10),
       child: ListView.separated(
+        physics: const NeverScrollableScrollPhysics(),
         itemCount: products.length,
         itemBuilder: (context, index) => CardItemWidget(
           productModel: products[index],
