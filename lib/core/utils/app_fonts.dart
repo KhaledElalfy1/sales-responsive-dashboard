@@ -66,7 +66,8 @@ abstract class AppFonts {
   static TextStyle bold15(BuildContext context) => TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 15),
         fontWeight: FontWeight.bold,
-        color: AppColors.primaryColor, // You can replace this with a theme color if needed
+        color: AppColors
+            .primaryColor, // You can replace this with a theme color if needed
       );
 }
 
@@ -84,7 +85,7 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 
 double getCurrentPlatformRatio({required double currentWidth}) {
   if (currentWidth < SizeConfig.tablet) {
-    return currentWidth / 550;
+    return currentWidth / 750;
   } else if (currentWidth < SizeConfig.desktop) {
     return currentWidth / 1000;
   } else {

@@ -1,12 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:sales_responsive_dashboard/core/utils/app_fonts.dart';
 import 'package:sales_responsive_dashboard/features/home/models/product_model.dart';
 
-
 class CustomProductCard extends StatelessWidget {
   const CustomProductCard({
-    super.key, required this.productModel,
+    super.key,
+    required this.productModel,
   });
   final ProductModel productModel;
   @override
@@ -23,6 +22,7 @@ class CustomProductCard extends StatelessWidget {
         children: [
           Image.asset(
             productModel.image,
+            height: 200,
           ),
           const SizedBox(
             height: 20,
