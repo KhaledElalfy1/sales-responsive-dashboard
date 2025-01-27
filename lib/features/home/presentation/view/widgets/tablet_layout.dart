@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/card_section.dart';
 import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/custom_product_card_grid.dart';
 import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/drawer_section.dart';
 import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/product_section_header.dart';
@@ -51,6 +52,9 @@ class TabletLayout extends StatelessWidget {
                 const SliverToBoxAdapter(child: SizedBox(height: 20)),
                 const SliverToBoxAdapter(child: SpecialForYouCardsListView()),
                 const SliverToBoxAdapter(child: SizedBox(height: 20)),
+               const SliverToBoxAdapter(
+                  child: CardSection(),
+                )
               ],
             ),
           ),
