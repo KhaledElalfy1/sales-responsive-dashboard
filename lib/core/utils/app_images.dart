@@ -13,6 +13,9 @@ class AppImages {
   static const String special2 = 'assets/images/special2.png';
   static const String special3 = 'assets/images/special3.png';
 
+  static const String light = 'assets/images/light_mode.png';
+  static const String night = 'assets/images/night_mode.png';
+
 
   static String card(context) {
     return Theme.of(context).brightness == Brightness.dark

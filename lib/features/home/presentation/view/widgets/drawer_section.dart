@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sales_responsive_dashboard/core/utils/app_colors.dart';
 import 'package:sales_responsive_dashboard/core/utils/app_fonts.dart';
 import 'package:sales_responsive_dashboard/core/utils/app_icons.dart';
+import 'package:sales_responsive_dashboard/features/home/presentation/view/widgets/custom_theming_switch.dart';
 
 class DrawerSection extends StatefulWidget {
   const DrawerSection({super.key});
@@ -89,6 +90,10 @@ class _DrawerSectionState extends State<DrawerSection> {
             hasScrollBody: false,
             child: Column(
               children: [
+                const SizedBox(
+                  height: 10,
+                ),
+               const CustomThemingSwitch(),
                 const Expanded(child: SizedBox()),
                 ListTile(
                   leading: SvgPicture.asset(AppIcons.iconsLogout(context)),
@@ -115,3 +120,4 @@ class _DrawerSectionState extends State<DrawerSection> {
     );
   }
 }
+

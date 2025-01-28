@@ -1,12 +1,17 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sales_responsive_dashboard/core/cubit/cubit/theme_cubit.dart';
 import 'package:sales_responsive_dashboard/core/themes/app_themes.dart';
 import 'package:sales_responsive_dashboard/features/home/presentation/view/home_view.dart';
 
 void main() {
   runApp(
     DevicePreview(builder: (context) {
-      return const MyApp();
+      return BlocProvider(
+        create: (context) => ThemeCubit(),
+        child: const MyApp(),
+      );
     }),
   );
 }
@@ -23,7 +28,7 @@ class MyApp extends StatelessWidget {
       home: const HomeView(),
       theme: AppThemes().lightTheme,
       darkTheme: AppThemes().darkTheme,
-      themeMode: ThemeMode.light,
+      themeMode: context.watch<ThemeCubit>().themeMode,
     );
   }
 }
