@@ -1,16 +1,51 @@
-# sales_responsive_dashboard
+# Adaptive Sales dashboard  
 
-A new Flutter project.
 
-## Getting Started
+## description
+It's a UI for Adaptive sales dashboard that change depending on the user screen size or platform.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Whether you need to keep track of personal tasks or manage professional projects, UpTodo offers a range of tools to help you stay organized and focused.
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Images](#images)
+4. [Video Demo](#video-demo)
+
+   
+## Installation 
+1. Clone the repository:
+   
+    ```sh
+    git clone https://github.com/KhaledElalfy1/sales-responsive-dashboard.git
+    ```
+
+2. Navigate to the app directory:
+    ```sh
+    cd sales-responsive-dashboard
+    ```
+
+3. Clean the project and install dependencies:
+    ```sh
+    flutter clean
+    flutter pub get
+    ```
+
+    ## usage
+     To run the project, use the following command:
+     ```sh
+       flutter run
+     ```
+
+
+## Images
+
+
+<img src="Dashboard 1.png"/>  
+
+
+
+## Video Demo
+
+https://github.com/user-attachments/assets/c580ec70-b0cf-4ffc-896c-11f7ca5aa84e
