@@ -25,7 +25,7 @@ class CustomThemingSwitch extends StatelessWidget {
               inactiveTrackColor: Colors.transparent,
               inactiveThumbImage: const AssetImage(AppImages.light),
               activeThumbImage: const AssetImage(AppImages.night),
-              value: context.read<ThemeCubit>().isDark,
+              value: context.watch<ThemeCubit>().isDark,
               onChanged: (value) {
                 context.read<ThemeCubit>().changeTheme();
               }),
